@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "stouch"
+version = "0.1.0"
+description = "An extensible touch command with plugin support, allowing for enhanced file creation capabilities."
+authors = ["Azat <8280770+azataiot@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+
+
+[tool.poetry.extras]
+slugify = ["python-slugify"]
+
+[tool.poetry.plugins."stouch.plugins"]
+slugify = "plugins.slugify:SlugifyPlugin"
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
