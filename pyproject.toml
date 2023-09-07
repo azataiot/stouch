@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "stouch"
-version = "0.1.0"
+version = "0.1.0.post1"
 description = "An extensible touch command with plugin support, allowing for enhanced file creation capabilities."
 authors = ["Azat <8280770+azataiot@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/azataiot/stouch"
 
 [tool.poetry.dependencies]
 python = "^3.11"
