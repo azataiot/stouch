@@ -7,7 +7,8 @@ try:
 except ImportError:
     raise ImportError(
         "The 'python-slugify' package is required to use the SlugifyPlugin. Please install it using 'poetry install "
-        "--extras \"slugify\"' or 'pip install stouch[slugify]'.")
+        "--extras \"slugify\"' or 'pip install stouch[slugify]'."
+    )
 
 
 class SlugifyPlugin(BasePlugin):
@@ -25,4 +26,4 @@ class SlugifyPlugin(BasePlugin):
         Returns:
             str: The slugified filename.
         """
-        return slugify(input_data, separator='-')
+        return slugify(input_data, separator="-")
