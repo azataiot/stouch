@@ -9,7 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 typer = "^0.9.0"
-
+python-slugify = {version = "^8.0.1", optional = true}
 
 [tool.poetry.extras]
 slugify = ["python-slugify"]
